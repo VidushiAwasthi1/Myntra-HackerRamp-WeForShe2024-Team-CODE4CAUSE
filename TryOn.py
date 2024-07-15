@@ -9,7 +9,7 @@ detector = PoseDetector()
 
 # Fixed ratio for resizing the shirt image
 fixedRatio = 262/190
-shirtRatioHeightWidth = 581 / 440  # Assuming the shirt image has a height-to-width ratio of 680/440
+shirtRatioHeightWidth = 581 / 440  # Assuming the shirt image has a height-to-width ratio of 581/440
 
 # Paths for resources
 shirtFolderPath = "Resources/Shirts"
@@ -37,7 +37,7 @@ while True:
     img = detector.findPose(img)
     lmList, bboxInfo = detector.findPosition(img, bboxWithHands=False, draw=False)
     if lmList:
-        print(lmList)
+        #print(lmList)
         lm11 = lmList[11][0:2]
         lm12 = lmList[12][0:2]
 
