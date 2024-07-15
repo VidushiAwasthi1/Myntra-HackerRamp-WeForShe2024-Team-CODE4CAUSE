@@ -51,7 +51,7 @@ while True:
 
         if widthOfShirt > 0:
             shirtPath = os.path.join(shirtFolderPath, listShirts[imageNumber])
-            print(f"Loading shirt image: {shirtPath}")
+           # print(f"Loading shirt image: {shirtPath}")
             imgShirt = cv2.imread(shirtPath, cv2.IMREAD_UNCHANGED)
 
             if imgShirt is not None:
